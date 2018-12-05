@@ -287,7 +287,9 @@ function isYoutube(str) {
 
 
 
-
+client.on('ready', () => { //code bot not leave room voice //Bot Is Online
+    client.channels.get("519997884134064131").join(); //by : ....
+});
 
 
 
