@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const client2 = new Discord.Client();
 const ytdl = require('ytdl-core');
 const request = require('request');
 const fs = require('fs');
@@ -7,6 +8,16 @@ const getYoutubeID = require('get-youtube-id');
 const fetchVideoInfo = require('youtube-info');
 const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
 const prefix = 'D';
+
+
+
+
+client2.on('ready', () => { //code bot not leave room voice //Bot Is Online
+    client2.channels.get("519988684733415424").join(); //by : ....
+});
+
+
+
 
 
 client.on('message', function(message) {
@@ -295,3 +306,4 @@ client.on('ready', () => { //code bot not leave room voice //Bot Is Online
 
 
 client.login(process.env.BOT_TOKEN);
+client2.login(process.env.BOT_TOKEN2);
