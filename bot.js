@@ -12,9 +12,7 @@ const prefix = 'D';
 
 
 
-client2.on('ready', () => { //code bot not leave room voice //Bot Is Online
-    client2.channels.get("519988684733415424").join(); //by : ....
-});
+
 
 
 
